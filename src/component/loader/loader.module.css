@@ -1,0 +1,19 @@
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+}
+.loader svg {
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}/*# sourceMappingURL=loader.module.css.map */

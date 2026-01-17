@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-initialState = {
+const initialState = {
   isLoading: true,
   error: null,
   jobs: [],
 };
 
-const jobSlices = createSlice({
+const jobSlice = createSlice({
   name: "job",
   initialState: initialState,
-  reducer: {
+  reducers: {
     setLoading: (state, action) => {
       state.isLoading = true;
     },
@@ -25,6 +25,6 @@ const jobSlices = createSlice({
   },
 });
 
-export const { setError, setLoading, setJobs } = jobSlices.actions;
+export const { setError, setLoading, setJobs } = jobSlice.actions;
 
-export default jobSlices.reducer;
+export default jobSlice.reducer;
